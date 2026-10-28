@@ -1,0 +1,17 @@
+{
+  "name": "elevator-doors-gallery",
+  "title": "Elevator Doors Gallery",
+  "category": "carousels",
+  "description": "Each photo is a floor behind elevator doors. Press a floor button on the side panel: the doors slide shut, the indicator counts floors with a travel light, and the doors open on the new photo with its floor, title and caption. 'Step inside' zooms the photo out of the doorway to fill the card; click or Escape to return.",
+  "tags": ["gallery", "elevator", "doors", "floors", "hotel", "building", "real-estate", "venue", "playful", "storytelling", "card", "light-dark"],
+  "export": "ElevatorDoorsGallery (also default export); elevatorDefaultItems",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "fully shadcn tokens (card, muted, foreground, background, border, ring, chart-1) with dark: variants - follows the theme",
+  "mainProps": "items: {src, title?, caption?, alt?, floor? (number or text like 'B1')}[], floor/defaultFloor/onFloorChange, inside/onInsideChange, onStepInside, autoplay, interval, initialDelay, labels (translate all UI text), plus any <div> props",
+  "notes": "A card, max-w 560px: elevator + 2-column button panel side by side above 480px, stacked below. Needs Tailwind v4 (@container, border-current/50) and React 19 (ref as prop, inert). 4-10 floors look best. `labels` makes it easy to localise (Arabic etc.). Great for hotels, venues, office buildings, real estate.",
+  "source": "21st.dev - elevator-doors-gallery",
+  "license": "check source page",
+  "added": "2026-10-14"
+}

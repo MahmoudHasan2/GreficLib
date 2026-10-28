@@ -1,0 +1,17 @@
+{
+  "name": "arc-gallery-hero",
+  "title": "Arc Gallery Hero",
+  "category": "heroes",
+  "description": "Full-screen hero: square photo cards fanned along a half-circle arc across the top (each tilted with the curve, fading up one after another), with a centred big headline, description and two pill buttons underneath.",
+  "tags": ["hero", "landing", "arc", "photos", "gallery", "memories", "saas", "app", "startup", "headline", "cta", "light-dark"],
+  "export": "ArcGalleryHero (also default export); arcGalleryDefaultImages",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "shadcn tokens (background, foreground, muted, border, primary, accent) - follows the theme",
+  "mainProps": "images: string[], title, description (ReactNode), primaryAction / secondaryAction ({label, href} or null), startAngle/endAngle, radiusLg/Md/Sm, cardSizeLg/Md/Sm, className",
+  "notes": "min-h-screen. 10-14 images look best. Rewritten from the 21st.dev original: copy and buttons were hard-coded (now props, buttons are links), gray/indigo replaced with theme tokens, sizes moved from a JS resize listener to CSS (no layout jump after hydration on mobile), scoped keyframes, reduced motion, no remote fallback image.",
+  "source": "21st.dev - arc-gallery-hero-component",
+  "license": "check source page",
+  "added": "2026-10-14"
+}

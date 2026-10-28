@@ -1,0 +1,17 @@
+{
+  "name": "airplane-window-gallery",
+  "title": "Airplane Window Gallery",
+  "category": "carousels",
+  "description": "A cabin wall with 2-5 oval airplane windows, each showing a destination that drifts slowly as if flying, with seat number above and place + country below. With autoplay a window shade drops and lifts on a new destination. Click a window to fly through it - the view zooms out of the oval to fill the card with title, location and caption - then click / Escape / 'Sit back' to return.",
+  "tags": ["gallery", "travel", "airplane", "window", "destinations", "tourism", "airline", "playful", "storytelling", "card", "light-dark"],
+  "export": "AirplaneWindowGallery (also default export); airplaneWindowDefaultItems",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "shadcn tokens with dark: variants (the cabin uses primary in dark mode) - follows the theme",
+  "mainProps": "items: {src, title?, location?, caption?, alt?}[], windows (2-5), autoplay, interval, drift (s, 0 = still), shadeDuration, firstRow, onLookOut, activeWindow/onActiveWindowChange, plus any <div> props",
+  "notes": "Card with aspect-ratio 3/2 - set a max width (e.g. max-w-[640px]). React 19 (ref as prop). Autoplay needs more items than windows. Same 'zoom out of the opening' technique as elevator-doors-gallery. Fixed: views loaded before hydration stayed invisible (onLoad missed). Original by CCgather - keep the credit.",
+  "source": "21st.dev - airplane-window-gallery (by CCgather, https://ccgather.com)",
+  "license": "check source page",
+  "added": "2026-10-14"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "scroll-gallery",
+  "title": "Scroll Gallery",
+  "category": "carousels",
+  "description": "Full-screen scroll-driven gallery: the section pins while you scroll, each scroll step wipes the next photo in through horizontal strips (bottom to top) while images slowly zoom out, and an info band across the middle (prefix | title | link) swaps the title with a slide. variant='studio' gives big white editorial type; 'minimal' is structure only.",
+  "tags": ["scroll", "pinned", "scrolltrigger", "gsap", "fullscreen", "portfolio", "agency", "editorial", "featured-work", "hero", "photos", "dark"],
+  "export": "ScrollGallery (also default export); scrollGalleryDefaultSlides, SCROLL_GALLERY_STUDIO_CLASSES, SCROLL_GALLERY_MINIMAL_CLASSES",
+  "dependencies": ["gsap", "@gsap/react"],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "photo-based; studio variant uses white text - give photos enough contrast",
+  "mainProps": "slides: {title, image, url?, linkLabel?}[], variant ('studio' | 'minimal'), scrollPerTransition (vh, default 200), timing {initialDelay, finalDelay, scaleFrom, scaleTo, stripRevealSpeed, title...}, stripsCount, scrub, prefixLabel, linkLabel, showInfoBand/showPrefix/showLink, classNames (per-slot overrides), embedded + scroller (for a scrolling box)",
+  "notes": "Put it directly in the page flow, never inside a fixed-height wrapper - it pins and adds its own scroll spacer. Total scroll = (slides-1) x scrollPerTransition + initialDelay + finalDelay (vh). The original prompt imported a missing helper file (scroll-trigger-utils) - inlined here; fixed the pin length: GSAP read +=700vh as 700px, so the original 1000 per transition was really 1000px - now converted to real vh, default 200vh per transition (about 2 screens per photo) and 50vh padding. Default photos are dark on purpose (white type sits on them).",
+  "source": "21st.dev - scroll-gallery (Deadlock Studios)",
+  "license": "check source page",
+  "added": "2026-10-14"
+}

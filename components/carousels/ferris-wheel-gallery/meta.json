@@ -1,0 +1,17 @@
+{
+  "name": "ferris-wheel-gallery",
+  "title": "Ferris Wheel Gallery",
+  "category": "carousels",
+  "description": "A drawn Ferris wheel whose gondolas hold photo thumbnails. Choosing an item turns the wheel slot by slot with a springy settle and a gondola sway, while the large photo, a 'STUDY 03' label, title and discipline/year show beside it. Drag, scroll, arrow keys, click a gondola, or opt-in autoplay. Clean, editorial, shadcn-styled.",
+  "tags": ["gallery", "portfolio", "photos", "wheel", "ferris", "circular", "playful", "editorial", "section", "projects", "light-dark"],
+  "export": "FerrisWheelGallery (also default export); ferrisWheelDefaultItems",
+  "dependencies": ["lucide-react"],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "fully shadcn tokens (background, foreground, card, muted, border, primary, ring, chart-2) - follows the theme",
+  "mainProps": "items: {src, alt, title, id?, year?, discipline?}[], active/defaultActive/onActiveChange, direction ('cw' | 'ccw'), autoplay, interval (ms), plus any <div> props",
+  "notes": "Requires Tailwind v4 (container queries @container / @min-[600px]/ferris:) and React 19 (ref as a prop). Uses the shadcn chart-2 colour for accents. Sizes itself to its container width (wheel + side panel above 600px, stacked below) - drop it in a max-w container. 6-10 items look best.",
+  "source": "21st.dev - ferris-wheel-gallery",
+  "license": "check source page",
+  "added": "2026-10-14"
+}

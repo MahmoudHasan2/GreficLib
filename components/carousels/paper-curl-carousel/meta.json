@@ -1,0 +1,17 @@
+{
+  "name": "paper-curl-carousel",
+  "title": "Paper Curl Carousel",
+  "category": "carousels",
+  "description": "Full-bleed slider where each slide is a printed sheet: drag its edge (or click/arrow) and it rolls over like a page turning, showing the paper back and casting a shadow on the next sheet. Hovering near an edge lifts the corner. Caption rail with counter, title, caption and prev/next.",
+  "tags": ["slider", "hero", "webgl", "page-turn", "paper", "book", "magazine", "editorial", "photos", "drag", "autoplay", "premium"],
+  "export": "PaperCurlCarousel (also default export)",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "rail uses shadcn CSS vars (--color-background/foreground/border/muted-foreground); `paper` sets the sheet back colour",
+  "mainProps": "items: {src, title?, caption?, alt?}[], height (default 100svh, must be definite), autoplay (ms, 0=off), loop, paper (#rrggbb), rail, index/defaultIndex/onIndexChange",
+  "notes": "Images must be CORS-enabled (Unsplash, same-origin /public, data: URLs); otherwise falls back to plain images. WebGL1 - one shader pass, light on GPU. Same caption-rail design as ink-flow-carousel, so the two pair well on one site.",
+  "source": "21st.dev - paper-curl-carousel",
+  "license": "check source page",
+  "added": "2026-10-09"
+}

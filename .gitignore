@@ -1,0 +1,24 @@
+# Built showcase site and archives (generated, not source)
+view/
+*.zip
+
+# Inbox for raw component code waiting to be added
+inbox/*
+!inbox/.gitkeep
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node (in case a test app is created here)
+node_modules/
+.next/
+out/
+*.log
+
+# Env files
+.env
+.env.*

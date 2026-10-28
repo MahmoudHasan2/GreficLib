@@ -1,0 +1,17 @@
+{
+  "name": "radial-wedge-gallery",
+  "title": "Radial Wedge Gallery",
+  "category": "carousels",
+  "description": "A disc cut into pie slices, one photo per slice, with numbered badges. Hovering/choosing a slice widens it while the others shrink, and the disc rotates it to the top; the round hub shows its number, title and discipline. Double-click, Enter or the hub opens the photo full-frame with a circular iris reveal.",
+  "tags": ["gallery", "portfolio", "photos", "circle", "pie", "radial", "wheel", "hover", "lightbox", "editorial", "section", "light-dark"],
+  "export": "RadialWedgeGallery (also default export); radialWedgeDefaultItems",
+  "dependencies": ["lucide-react"],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "fully shadcn tokens (card, background, foreground, muted, border, ring, chart-2) - follows the theme",
+  "mainProps": "items: {src, title, alt?, id?, year?, discipline?}[], active/defaultActive/onActiveChange (null = even overview), expanded/onExpandedChange, autoplay, interval, hubTitle, plus any <div> props",
+  "notes": "Square by default (aspect-ratio 1/1) - set a width, or pass style={{aspectRatio:'auto'}} + a height to fill a box. React 19 (ref as prop, inert). 6-10 items look best. Hover selects with a mouse, so it reacts as soon as the cursor crosses it.",
+  "source": "21st.dev - radial-wedge-gallery",
+  "license": "check source page",
+  "added": "2026-10-14"
+}

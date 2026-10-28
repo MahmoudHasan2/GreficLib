@@ -1,0 +1,17 @@
+{
+  "name": "hero-carousel",
+  "title": "Hero Carousel (filmstrip)",
+  "category": "heroes",
+  "description": "Full-bleed editorial hero driven by a filmstrip across the middle: all cards share a top edge, the focused card unfurls to full 3:4 height while its neighbours stay cut to half. The whole background becomes that photo, zoomed and re-graded to the item's accent colour, with film grain. A big two-line headline wipes up above the strip, with a mono credit and right-aligned meta facts (date, time, city); centred top bar (Back / brand / Menu) and a 01/09 progress rail.",
+  "tags": ["hero", "carousel", "filmstrip", "editorial", "fashion", "events", "lookbook", "gallery", "art", "agency", "fullscreen", "dark", "accent-color"],
+  "export": "HeroCarousel (also default export); heroCarouselDefaultItems",
+  "dependencies": ["framer-motion"],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": true,
+  "darkMode": "always dark; each item's `accent` tints the background",
+  "mainProps": "items: {title ('\n' for line breaks), image, credit?, meta?: string[], accent?: '#hex', id?}[], index/defaultIndex/onIndexChange, brand, onBack, onMenu (show those buttons when given), autoplay, autoplayDelay, className",
+  "notes": "Fills its parent - give the parent a height (h-svh). Drag, click a card, wheel/trackpad (hands scroll back to the page at the ends), arrow keys / Home / End. Sizes are ratios of the measured stage. Fixed from the paste: broken \n strings, hidden until measured (no fly-in on load), wheel effect deps. Default art = same Unsplash set as works-wheel.",
+  "source": "21st.dev - hero-carousel (crafterui)",
+  "license": "check source page",
+  "added": "2026-10-14"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "card-fan-carousel",
+  "title": "Card Fan Carousel",
+  "category": "carousels",
+  "description": "Image cards spread in a fan like a hand of playing cards. Springy entrance, hover lifts a card and pushes neighbours aside; with more than 7 cards, arrows/dots/arrow keys page through them.",
+  "tags": ["cards", "fan", "gallery", "photos", "portfolio", "hover", "playful", "gsap", "light-dark"],
+  "export": "CardFanCarousel (also default export)",
+  "dependencies": ["gsap", "lucide-react"],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "arrows and dots have dark: styles; cards are just photos",
+  "mainProps": "cards: {imgUrl, alt?, linkUrl?}[], showControls, className, cardClassName",
+  "notes": "Best with 5-12 cards. Section sizes itself (22rem mobile -> 38rem desktop). Card size: override with cardClassName (set h/w and matching negative -ml/-mt = half of each). Respects prefers-reduced-motion.",
+  "source": "21st.dev - card-fan-carousel",
+  "license": "check source page",
+  "added": "2026-10-09"
+}

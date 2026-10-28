@@ -1,0 +1,17 @@
+{
+  "name": "ink-flow-carousel",
+  "title": "Ink Flow Carousel",
+  "category": "carousels",
+  "description": "Full-bleed image slider driven by a real GPU fluid simulation: the pointer stirs the photo like ink in water, and the next slide pours in as ink from the edge (or drops where you click). Caption rail with counter, title, caption and prev/next.",
+  "tags": ["slider", "hero", "webgl", "fluid", "ink", "photos", "autoplay", "artistic", "premium", "fullscreen"],
+  "export": "InkFlowCarousel (also default export)",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "rail uses shadcn CSS vars (--color-background/foreground/border/muted-foreground), so it follows the theme",
+  "mainProps": "items: {src, title?, caption?, alt?}[], height (default 100svh, must be definite), autoplay (ms, 0=off), duration, stir (0=off), loop, rail, index/defaultIndex/onIndexChange",
+  "notes": "Images must be CORS-enabled (Unsplash, same-origin /public, data: URLs). Needs WebGL2 + half-float; falls back to a cross-fade otherwise. Drops to a lighter simulation on slow devices. Heavy on GPU - use one per page, ideally as the hero.",
+  "source": "21st.dev - ink-flow-carousel",
+  "license": "check source page",
+  "added": "2026-10-09"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "works-wheel",
+  "title": "Works Wheel",
+  "category": "carousels",
+  "description": "Portfolio index: cards sit in a ring around a title, then the first scroll opens it into a vertical 3D drum you turn through the works.",
+  "tags": ["portfolio", "projects", "cards", "3d", "scroll", "agency", "showcase", "dark"],
+  "export": "WorksWheel",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": true,
+  "darkMode": "styles follow the parent; no mode prop",
+  "mainProps": "items: {title, image, href?}[] (required), label, action, plus any <section> props",
+  "source": "21st.dev",
+  "license": "check source page",
+  "added": "2026-09-30"
+}

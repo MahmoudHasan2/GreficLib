@@ -1,0 +1,17 @@
+{
+  "name": "dye-whorl",
+  "title": "Dye Whorl",
+  "category": "backgrounds",
+  "description": "Full-bleed animated background: a real GPU fluid simulation of ink diffusing in water - billowing plumes, tendrils, drops landing every few seconds - and the pointer stirs it. Monochrome ink that follows the theme (dark ink on light, light ink on dark). Children render on top.",
+  "tags": ["background", "hero", "webgl", "fluid", "ink", "smoke", "animated", "interactive", "monochrome", "premium", "light-dark"],
+  "export": "DyeWhorl (also default export)",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": true,
+  "darkMode": "automatic: reads --background, --foreground, --border, --muted-foreground (or --ns-muted) from <html>, any colour format, and re-reads when the .dark class changes. Optional --ns-accent tints freshly stirred ink.",
+  "mainProps": "children (content over the tank), speed, density (0..2), stir (0..2), paused, className (give it a height, e.g. h-screen), style",
+  "notes": "WebGL2 + half-float required; without it renders just --background behind the children. Pauses off-screen / hidden tab; reduced-motion shows a still, developed frame. Auto-lowers quality on slow devices. Heavy on GPU - one per page. The 21st.dev prompt was truncated at 50k chars: pointer events, run/pause wiring, theme observer, cleanup and JSX were rewritten for GreficLib; the solver and shaders are original.",
+  "source": "https://21st.dev/@nikolas-sapa/components/dye-whorl",
+  "license": "check source page",
+  "added": "2026-10-09"
+}

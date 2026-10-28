@@ -1,0 +1,16 @@
+{
+  "name": "wheel-carousel",
+  "title": "Wheel Carousel",
+  "category": "carousels",
+  "description": "Vertical curved list of names on a wheel; the photo beside it crossfades to the selected item. Scroll, drag or arrow keys.",
+  "tags": ["list", "names", "photo", "minimal", "light-dark", "menu", "team", "products"],
+  "export": "WheelCarousel",
+  "dependencies": ["framer-motion", "next-themes"],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": true,
+  "darkMode": "mode prop: light | dark | system | custom (system needs a next-themes ThemeProvider; without it shows light)",
+  "mainProps": "items: {label, image, imageAlt?}[], mode, photoSide, photoWidth, photoAspect, textColor, selectedColor, markerColor, background, activeIndex, onActiveChange",
+  "source": "https://21st.dev/@componentry/components/wheel-carousel",
+  "license": "check source page",
+  "added": "2026-10-01"
+}

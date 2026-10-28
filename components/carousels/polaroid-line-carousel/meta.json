@@ -1,0 +1,17 @@
+{
+  "name": "polaroid-line-carousel",
+  "title": "Polaroid Line Carousel",
+  "category": "carousels",
+  "description": "Polaroid prints pegged with wooden clothespins to a sagging string. Drag the line and the photos slide along it, swinging on their pegs and settling with a little overshoot; they sway gently at rest. Centre print is active; serif title + caption, counter and round arrows at the bottom.",
+  "tags": ["polaroid", "photos", "gallery", "string", "clothesline", "physics", "drag", "playful", "nostalgic", "memories", "wedding", "travel", "autoplay"],
+  "export": "PolaroidLineCarousel (also default export)",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "background/ink default to --color-background / --color-foreground, so it follows the theme; prints stay cream paper",
+  "mainProps": "slides: {image?, title?, caption?, alt?, palette?, seed?}[], height (default 100svh), cardWidth (px, default 300), sag, swing (0 = still), autoplay (ms, default 4500, 0=off), string, background, ink, onChange",
+  "notes": "Plain DOM + rAF, no WebGL, no CORS needed. Slides without `image` get a painted landscape (export polaroidPaintedSlides). Drag, click a print, arrows or arrow keys.",
+  "source": "21st.dev - polaroid-line-carousel",
+  "license": "check source page",
+  "added": "2026-10-09"
+}

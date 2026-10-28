@@ -1,0 +1,17 @@
+{
+  "name": "diagonal-marquee",
+  "title": "Diagonal Marquee Carousel",
+  "category": "carousels",
+  "description": "Rows of image cards scrolling endlessly, the whole stack tilted diagonally, rows alternate direction, top/bottom fade. Great as a hero or section background.",
+  "tags": ["marquee", "gallery", "photos", "infinite", "background", "hero", "diagonal", "auto-play", "light-dark"],
+  "export": "DiagonalMarquee (also default export)",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "fade uses white / dark:neutral-950; override with fadeClassName (e.g. from-black)",
+  "mainProps": "cards: {url, title, id?}[], angle, baseSpeed (seconds per loop), rows, alternateDirections, pauseOnHover, showFade, overlay, className, cardClassName, fadeClassName",
+  "notes": "Default height is h-screen; pass className to change. Respects prefers-reduced-motion. Cards are 270x200 on mobile, 400x300 from md.",
+  "source": "https://great-ui.com (Great UI by Saurabh Sharma, via 21st.dev)",
+  "license": "MIT",
+  "added": "2026-10-09"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "3d-carousel",
+  "title": "3D Photo Carousel",
+  "category": "carousels",
+  "description": "Photos on a rotating 3D cylinder. Drag to spin, click a photo to open it full size.",
+  "tags": ["gallery", "photos", "3d", "drag", "lightbox", "showcase"],
+  "export": "ThreeDPhotoCarousel",
+  "dependencies": ["framer-motion"],
+  "uses": [],
+  "needsHeight": false,
+  "darkMode": "neutral; follows the page",
+  "mainProps": "images?: string[] (image URLs)",
+  "extraFiles": "full-page.tsx = a complete app/page.tsx with the carousel inlined",
+  "source": "21st.dev",
+  "license": "check source page",
+  "added": "2026-09-30"
+}

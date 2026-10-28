@@ -1,0 +1,17 @@
+{
+  "name": "ink-blot-carousel",
+  "title": "Ink Blot Carousel",
+  "category": "carousels",
+  "description": "Full-bleed image slider: the next picture spreads in like ink soaking into paper - a ragged blot blooms from where you tap, with satellite drops. Big serif title + caption bottom-left, counter and round arrows bottom-right, autoplay progress line.",
+  "tags": ["slider", "hero", "ink", "photos", "autoplay", "editorial", "artistic", "fullscreen", "svg", "dark"],
+  "export": "InkBlotCarousel (also default export)",
+  "dependencies": [],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "always dark stage; `ink` prop sets text/button colour (default white)",
+  "mainProps": "slides: {image?, title?, caption?, alt?, palette?, seed?}[], height (default 100svh), duration, bleed (edge raggedness), autoplay (ms, default 6000, 0=off), ink, onChange",
+  "notes": "SVG mask + turbulence, no WebGL - lighter than ink-flow-carousel and works everywhere. Any image host works (no CORS needed). Slides without `image` get a painted landscape (export inkBlotPaintedSlides). Tap, swipe, arrows or arrow keys.",
+  "source": "21st.dev - ink-blot-carousel",
+  "license": "check source page",
+  "added": "2026-10-09"
+}

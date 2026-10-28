@@ -1,0 +1,17 @@
+{
+  "name": "floating-card-gallery",
+  "title": "Floating Card Gallery",
+  "category": "cards",
+  "description": "A responsive grid (1/2/3 columns) of dark glassy article cards - image, title, excerpt, author avatar, category badge - floating in 3D over a purple gradient with drifting particles. The whole grid tilts toward the mouse, hovering lifts a card with a violet glow, and clicking opens an overlay with the full text, tags and a call-to-action link.",
+  "tags": ["cards", "grid", "blog", "articles", "3d", "tilt", "glow", "dark", "purple", "tech", "portfolio", "features", "section"],
+  "export": "FloatingCardGallery (also default export); floatingCardDefaults",
+  "dependencies": ["framer-motion"],
+  "uses": ["shared/lib/utils.ts"],
+  "needsHeight": false,
+  "darkMode": "always dark (own slate/purple palette); change backgroundClassName / accentColor to fit a brand",
+  "mainProps": "cards: {title, description, image, fullDescription?, avatar?, author?, category?, tags?, href?}[], backgroundClassName, accentColor, maxCards (6), ctaLabel, tilt (degrees, 0 = flat), className",
+  "notes": "Section is min-h-screen by default (override with className). Heavily fixed from the 21st.dev original, which would not build: added types + 'use client', removed Math.random() in render (hydration mismatch), defined the missing float keyframes, Tailwind v4 opacity syntax, tilt via motion values, reduced-motion, Escape to close, and the CTA is now a real link (href) instead of a dead button.",
+  "source": "21st.dev - floating-card-gallery",
+  "license": "check source page",
+  "added": "2026-10-14"
+}
